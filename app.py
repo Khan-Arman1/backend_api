@@ -8,7 +8,7 @@ from random import randint
 
 # initiallize the flask app
 app=Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:5173"}}) # allows only specific frontend domain
+CORS(app, resources={r"/api/*": {"origins": "*"}}) # allows only specific frontend domain
 
 
 app.secret_key = "adfjskasjflkjasflksfja13"
