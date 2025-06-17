@@ -23,13 +23,13 @@ credit = 10
 @app.route('/api/requestdata',methods=['GET','POST'])
 # @app.route('/',methods=['GET','POST'])
 def index_page():
-        global response,credit
-        while credit > 0:
+            global response,credit
+        # while credit > 0:
             try:
                 if True:
-                    print("Credits remain -",credit)
-                    credit -= 1 
-                    if credit >0:
+                    # print("Credits remain -",credit)
+                    # credit -= 1 
+                    # if credit >0:
                         
                         if request.method == "POST":
                             input_case=request.form[escape('cases')].lower()
@@ -110,16 +110,16 @@ def index_page():
                         print("Credits remain - ",credit)
                     
 
-                    elif credit == 0:
-                        response = "You are out of credits. Create an account for more actions."
-                        print("Credits remain - ",credit)
-                        return jsonify(response)
-                        # return jsonify({"error":response})
-                    elif credit < 0:
-                        response = "You are out of credits. Create an account for more actions."
-                        print("Credits remain - ",credit)
-                        return jsonify(response)
-                        # return jsonify({"error":response})
+                    # elif credit == 0:
+                    #     response = "You are out of credits. Create an account for more actions."
+                    #     print("Credits remain - ",credit)
+                    #     return jsonify(response)
+                    #     # return jsonify({"error":response})
+                    # elif credit < 0:
+                    #     response = "You are out of credits. Create an account for more actions."
+                    #     print("Credits remain - ",credit)
+                    #     return jsonify(response)
+                    #     # return jsonify({"error":response})
 
             except Exception as e:
                  response = "Sorry, can you please enter your query again😉"
