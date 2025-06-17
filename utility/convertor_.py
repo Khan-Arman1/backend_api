@@ -23,7 +23,7 @@ def finish_response(prompt):
       # response=search_output(prompt)
       # print("before parsing into json - ",type(response))
       # data = json.loads(response)
-      x = "Sorry, can you please enter your query again😉."
+      x = "Sorry, can you please enter your query again 😉."
       data = {"response":x}
 
   return data
