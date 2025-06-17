@@ -5,3 +5,4 @@ dotenv
 flask
 markupsafe
 flask-cors
+gunicorn
