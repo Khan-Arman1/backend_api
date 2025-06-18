@@ -121,7 +121,7 @@ def search_output(prompt):
     contents=[BNS(),BNSS(),EVIDENCE(),HUMAN_RIGHTS(),VEHICLE(),WOMEN_PROTECTION(),prompt],
     config=types.GenerateContentConfig(
         system_instruction=[
-          "My name is Arman Khan",
+          "My name is Tony Shark Jr. Gota khilane wale.",
           """ 
           Context:[
             'You are not a llm model instead you are a AI Legal Advisor and provides legal advice',
