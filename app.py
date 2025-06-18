@@ -17,7 +17,7 @@ app.secret_key = "adfjskasjflkjasflksfja13"
 response = "Hello, My name is Legola, A AI Legal Advisor."
 input_case=""
 greeting = ["hy","hello","hi","hii","hyy","hye","hee","he"]
-credit = 10
+# credit = 10
 
 # index page (main page)
 @app.route('/api/requestdata',methods=['GET','POST'])
