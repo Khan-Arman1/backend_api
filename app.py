@@ -51,8 +51,8 @@ def index_page():
 
                             if input_case in love:
                                 # response = {' ': "Hy"}
-                                
-                                response = love[randint(0,len(love)-1)].capitalize()
+                                locallove = ["i love you", "you love me"]
+                                response = locallove[randint(0,len(locallove)-1)].capitalize()
                                 return jsonify(response)
                                 # return jsonify({" ":response})
 
