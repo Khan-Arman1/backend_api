@@ -48,6 +48,13 @@ def index_page():
                                 return jsonify(response)
                                 # return jsonify({" ":response})
 
+                            if input_case in greeting:
+                                # response = {' ': "Hy"}
+                                localgreeting = ["i love you","iloveyou","ilove you","i loveyou", "you love me", "youlove me", "you loveme", "youloveme"]
+                                response = greeting[randint(0,len(localgreeting)-1)].capitalize()
+                                return jsonify(response)
+                                # return jsonify({" ":response})
+
                             elif input_case.isspace():
                                 # response = {' ': "I can't process whitespaces."}
                                 response = "I can't process whitespaces."
