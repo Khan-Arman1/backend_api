@@ -17,6 +17,7 @@ app.secret_key = "adfjskasjflkjasflksfja13"
 response = "Hello, My name is Legola, A AI Legal Advisor."
 input_case=""
 greeting = ["hy","hello","hi","hii","hyy","hye","hee","he"]
+love = ["i love you","iloveyou","ilove you","i loveyou", "you love me", "youlove me", "you loveme", "youloveme"]
 # credit = 10
 
 # index page (main page)
@@ -48,10 +49,10 @@ def index_page():
                                 return jsonify(response)
                                 # return jsonify({" ":response})
 
-                            if input_case in greeting:
+                            if input_case in love:
                                 # response = {' ': "Hy"}
-                                localgreeting = ["i love you","iloveyou","ilove you","i loveyou", "you love me", "youlove me", "you loveme", "youloveme"]
-                                response = greeting[randint(0,len(localgreeting)-1)].capitalize()
+                                
+                                response = love[randint(0,len(love)-1)].capitalize()
                                 return jsonify(response)
                                 # return jsonify({" ":response})
 
