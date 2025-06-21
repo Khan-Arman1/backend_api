@@ -25,7 +25,7 @@ def index_page():
                         
                         if request.method == "POST":
                             input_case=request.form[escape('cases')].lower()
-                            print("Your entered query-- ",input_case)
+                            # print("Your entered query-- ",input_case)
                             # calling the resposne function
                             # Local responses
                             # check if all the entered values are numeric
@@ -87,13 +87,13 @@ def index_page():
                                     response = convertor_object.finish_response()
 
                                     if type(response) is type({'a':'1',1:'asdf'}):
-                                        print(type(response))
+                                        # print(type(response))
                                         # print(response)
                                         return jsonify(response)
                                         # return jsonify({" ":response})
                                     elif type(response) is type(list('aran')):
                                         # print(response)
-                                        print(type(response))
+                                        # print(type(response))
                                         return jsonify(response)
                                         # return jsonify({" ":response})
                                 except:
@@ -102,13 +102,13 @@ def index_page():
                                     response = convertor_object.finish_response()
 
                                     if type(response) is type({'a':'1',1:'asdf'}):
-                                        print(type(response))
+                                        # print(type(response))
                                         # print(response)
                                         return jsonify(response)
                                         # return jsonify({" ":response})
                                     elif type(response) is type(list('aran')):
                                         # print(response)
-                                        print(type(response))
+                                        # print(type(response))
                                         return jsonify(response)
                                         # return jsonify({" ":response})
                     
