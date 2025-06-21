@@ -16,7 +16,6 @@ class finish_response:
       """
       try:
         print("try in convertor")
-        # print(f"IN convertor file prompt : {self.prompt}")
         prompt1 = self.prompt
         returnedresponse = NS.search_output(prompt1) # NS_obj.return_rspo_opt() will return string llm response
 
@@ -32,12 +31,8 @@ class finish_response:
       except: # if try block raise an error when loading to the json
           print("Passed in except")
           print("An Error occured while parsing into json(try)")
-          # response=search_output(prompt) 
-          # print("before parsing into json - ",type(response))
-          # data = json.loads(response)
           x = "Sorry, can you please enter your query again😉!"
           data = {"response":x}
-          """Better option is to pass the prompt again the llm model , after that either it returns stream output or a complete output"""
 
       return data
       
