@@ -1,4 +1,4 @@
-print("documents loading...")
+# print("documents loading...")
 
 from utility.config import client
 import pandas as pd # documents reading 
@@ -91,4 +91,4 @@ def HUMAN_RIGHTS():
 # print("vehicle ",VEHICLE())
 # print("women protection ",WOMEN_PROTECTION())
 # print("Human rights ",HUMAN_RIGHTS())
-print("documents end loading...")
+# print("documents end loading...")
