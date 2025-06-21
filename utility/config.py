@@ -1,4 +1,4 @@
-print("config executing...")
+# print("config executing...")
 
 from google import genai # for model use
 import os # for import the API key from the file
@@ -11,4 +11,4 @@ load_dotenv()
 client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY")) # access the api key for the google model interaction
 # #---
 
-print("config end executing...")
+# print("config end executing...")
