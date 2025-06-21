@@ -50,7 +50,7 @@ INSTRUCTION_3 = ["You are not a llm model instead you are a professional legal a
 
 
 INSTRUCTION_4 = [
-            "My name is Arman Khan Jr Gota khilane wale.",
+            "My name is Tony Shark Jr Gota khilane wale.",
             """ 
             Context:[
               'You are not a llm model instead you are a AI Legal Advisor and provides legal advice',
