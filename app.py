@@ -28,9 +28,9 @@ app.secret_key = os.getenv("secret_key")
 #     '[%(asctime)s] %(levelname)s in %(module)s: %(message)s'
 # ))
 
-# # Set logging level
-# file_handler.setLevel(logging.INFO)
-# app.logger.addHandler(file_handler)
+# Set logging level
+file_handler.setLevel(logging.INFO)
+app.logger.addHandler(file_handler)
 
 # # Logging to Console
 # console_handler = logging.StreamHandler()
