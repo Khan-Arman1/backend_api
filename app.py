@@ -7,8 +7,8 @@ from flask_cors import CORS
 from random import randint
 import os # for import the API key from the file
 from dotenv import load_dotenv # load the env file
-import logging
-from logging.handlers import RotatingFileHandler
+# import logging
+# from logging.handlers import RotatingFileHandler
 
 load_dotenv()
 
@@ -19,29 +19,29 @@ app.secret_key = os.getenv("secret_key")
 
 # File Logging setup
 # Create logs directory if it doesn't exist
-if not os.path.exists('logs'):
-    os.mkdir('logs')
+# if not os.path.exists('logs'):
+#     os.mkdir('logs')
 
-# Setup log file handler
-file_handler = RotatingFileHandler('logs/server.log', maxBytes=10240, backupCount=5)
-file_handler.setFormatter(logging.Formatter(
-    '[%(asctime)s] %(levelname)s in %(module)s: %(message)s'
-))
+# # Setup log file handler
+# file_handler = RotatingFileHandler('logs/server.log', maxBytes=10240, backupCount=5)
+# file_handler.setFormatter(logging.Formatter(
+#     '[%(asctime)s] %(levelname)s in %(module)s: %(message)s'
+# ))
 
-# Set logging level
-file_handler.setLevel(logging.INFO)
-app.logger.addHandler(file_handler)
+# # Set logging level
+# file_handler.setLevel(logging.INFO)
+# app.logger.addHandler(file_handler)
 
-# Logging to Console
-console_handler = logging.StreamHandler()
-console_handler.setFormatter(logging.Formatter('%(levelname)s: %(message)s'))
-console_handler.setLevel(logging.INFO)
-app.logger.addHandler(console_handler)
+# # Logging to Console
+# console_handler = logging.StreamHandler()
+# console_handler.setFormatter(logging.Formatter('%(levelname)s: %(message)s'))
+# console_handler.setLevel(logging.INFO)
+# app.logger.addHandler(console_handler)
 
 
-# Optional: Set default log level for the app
-app.logger.setLevel(logging.INFO)
-app.logger.info('App startup')
+# # Optional: Set default log level for the app
+# app.logger.setLevel(logging.INFO)
+# app.logger.info('App startup')
 
 # 
 
