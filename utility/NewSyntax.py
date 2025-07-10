@@ -4,7 +4,7 @@
 from utility.config import client # set configurations
 from utility.documents import *
 from google.genai import types # for understanding the document by model
-# from utility.instructions import *
+from utility.instructions import *
 import re # regular expression
 import os
 from dotenv import load_dotenv 
@@ -33,8 +33,8 @@ class Search_Output:
       model='gemini-2.0-flash-001',
       contents=[BNS(),BNSS(),EVIDENCE(),HUMAN_RIGHTS(),VEHICLE(),WOMEN_PROTECTION(),self.prompt],
       config=types.GenerateContentConfig(
-          # system_instruction=INSTRUCTION_1,
-          system_instruction=os.getenv("Instruction1"),
+          system_instruction=INSTRUCTION_1,
+          # system_instruction=os.getenv("Instruction1"),
           temperature=0.8,
           response_mime_type= 'application/json',
       ),
@@ -54,8 +54,8 @@ class Search_Output:
       model='gemini-2.0-flash-001',
       contents=[BNS(),BNSS(),EVIDENCE(),HUMAN_RIGHTS(),VEHICLE(),WOMEN_PROTECTION(),self.prompt],
       config=types.GenerateContentConfig(
-          # system_instruction=INSTRUCTION_2,
-          system_instruction=os.getenv("Instruction2"),
+          system_instruction=INSTRUCTION_2,
+          # system_instruction=os.getenv("Instruction2"),
           temperature=0.8,
           response_mime_type= 'application/json',
       ),
@@ -77,8 +77,8 @@ class Search_Output:
       model='gemini-2.0-flash-001',
       contents=[BNS(),BNSS(),EVIDENCE(),HUMAN_RIGHTS(),VEHICLE(),WOMEN_PROTECTION(),self.prompt],
       config=types.GenerateContentConfig(
-          # system_instruction=INSTRUCTION_3,
-          system_instruction=os.getenv("Instruction3"),
+          system_instruction=INSTRUCTION_3,
+          # system_instruction=os.getenv("Instruction3"),
 
           temperature=0.8,
           response_mime_type= 'application/json',
@@ -96,8 +96,8 @@ class Search_Output:
       model='gemini-2.0-flash-001',
       contents=[BNS(),BNSS(),EVIDENCE(),HUMAN_RIGHTS(),VEHICLE(),WOMEN_PROTECTION(),self.prompt],
       config=types.GenerateContentConfig(
-          # system_instruction= INSTRUCTION_4,
-          system_instruction=os.getenv("Instruction4"),
+          system_instruction= INSTRUCTION_4,
+          # system_instruction=os.getenv("Instruction4"),
           temperature=0.8,
           response_mime_type= 'application/json',
 
@@ -123,8 +123,8 @@ class Search_Output:
       model='gemini-2.0-flash-001',
       contents=[BNS(),BNSS(),EVIDENCE(),HUMAN_RIGHTS(),VEHICLE(),WOMEN_PROTECTION(),self.prompt],
       config=types.GenerateContentConfig(
-          # system_instruction=INSTRUCTION_1,
-          system_instruction=os.getenv("Instruction1"),
+          system_instruction=INSTRUCTION_1,
+          # system_instruction=os.getenv("Instruction1"),
           temperature=0.8,
           # response_mime_type= 'application/json',
           response_mime_type= 'text/plain',
@@ -145,8 +145,8 @@ class Search_Output:
       model='gemini-2.0-flash-001',
       contents=[BNS(),BNSS(),EVIDENCE(),HUMAN_RIGHTS(),VEHICLE(),WOMEN_PROTECTION(),self.prompt],
       config=types.GenerateContentConfig(
-          # system_instruction=INSTRUCTION_2,
-          system_instruction=os.getenv("Instruction2"),
+          system_instruction=INSTRUCTION_2,
+          # system_instruction=os.getenv("Instruction2"),
           temperature=0.8,
           # response_mime_type= 'application/json',
           response_mime_type= 'text/plain',
@@ -166,8 +166,8 @@ class Search_Output:
       model='gemini-2.0-flash-001',
       contents=[BNS(),BNSS(),EVIDENCE(),HUMAN_RIGHTS(),VEHICLE(),WOMEN_PROTECTION(),self.prompt],
       config=types.GenerateContentConfig(
-          # system_instruction=INSTRUCTION_3,
-          system_instruction=os.getenv("Instruction3"),
+          system_instruction=INSTRUCTION_3,
+          # system_instruction=os.getenv("Instruction3"),
           temperature=0.8,
           # response_mime_type= 'application/json',
           response_mime_type= 'text/plain',
@@ -185,8 +185,8 @@ class Search_Output:
       model='gemini-2.0-flash-001',
       contents=[BNS(),BNSS(),EVIDENCE(),HUMAN_RIGHTS(),VEHICLE(),WOMEN_PROTECTION(),self.prompt],
       config=types.GenerateContentConfig(
-          # system_instruction= INSTRUCTION_4,
-          system_instruction=os.getenv("Instruction4"),
+          system_instruction= INSTRUCTION_4,
+          # system_instruction=os.getenv("Instruction4"),
           temperature=0.8,
           # response_mime_type= 'application/json',
           response_mime_type= 'text/plain',
