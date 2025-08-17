@@ -47,7 +47,7 @@ app.secret_key = os.getenv("secret_key")
 
 
 # index page (main page)
-@app.route('/api/requestdata',methods=['POST'])
+@app.route('/api/requestdata/(input_case)',methods=['POST'])
 def index_page():
             try:
                         app.logger.info("Recieved a new request")
@@ -142,4 +142,5 @@ def index_page():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=False, host="0.0.0.0", port=port)
+
 
